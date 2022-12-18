@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Page 1](README.md)
+* [序言](README.md)
 
 ## Group 1
 
