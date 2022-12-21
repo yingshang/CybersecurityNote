@@ -1,6 +1,10 @@
 # 序言
 
+GitBook地址：https://icybersec.gitbook.io/cybersecuritynote-cn/
 
+仓库地址：https://github.com/yingshang/CybersecurityNote_cn
+
+作者博客：https://www.freebuf.com/author/%E9%99%8C%E5%BA%A6
 
 
 
