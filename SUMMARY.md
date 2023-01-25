@@ -10,6 +10,7 @@
 ## 安全证书
 * [CISSP](<安全证书/CISSP/README.md>)
 * [OSCP](<安全证书/OSCP/README.md>)
+  * [经验分享](<安全证书/OSCP/经验分享.md>)
 ## 靶场环境
 * [attackdefense](<靶场环境/attackdefense/README.md>)
 * [HTB](<靶场环境/HTB/README.md>)
