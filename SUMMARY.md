@@ -22,6 +22,8 @@
 * [Windows提权漏洞](<安全漏洞/Windows提权漏洞/README.md>)
 * [Windows漏洞](<安全漏洞/Windows漏洞/README.md>)
 * [应用漏洞](<安全漏洞/应用漏洞/README.md>)
+  * [REDAME](<安全漏洞/未授权漏洞/REDAME.md>)
+  * [SpringBoot Actuator未授权访问漏洞](<安全漏洞/未授权漏洞/SpringBoot Actuator未授权访问漏洞.md>)
 ## 安全证书
 * [CISSP](<安全证书/CISSP/README.md>)
 * [CRTO](<安全证书/CRTO/README.md>)
