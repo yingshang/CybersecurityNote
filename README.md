@@ -8,6 +8,7 @@
 - [信息安全笔记英文版](https://icybersec.gitbook.io/cybersecuritynote-en/)
 - [GitHub仓库地址](https://github.com/yingshang/CybersecurityNote_cn)
 - [作者博客](https://www.freebuf.com/author/%E9%99%8C%E5%BA%A6)
+- 微信公众号：陌度安全
 
 
 
