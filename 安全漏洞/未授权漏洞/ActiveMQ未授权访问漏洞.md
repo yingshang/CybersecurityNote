@@ -43,4 +43,4 @@ INFO: pidfile created : '/tmp/apache-activemq-5.5.0/data/activemq.pid' (pid '217
 
 重启服务就可以进行鉴权
 
-![image-20220725171202504](../../.gitbook/assets/image-20220725171202504.png)
+![image-20230129203038680](../../.gitbook/assets/image-20230129203038680.png)

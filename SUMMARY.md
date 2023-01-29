@@ -24,6 +24,9 @@
 * [应用漏洞](<安全漏洞/应用漏洞/README.md>)
 * [未授权漏洞](<安全漏洞/未授权漏洞/README.md>)
   * [ActiveMQ未授权访问漏洞](<安全漏洞/未授权漏洞/ActiveMQ未授权访问漏洞.md>)
+  * [Apache Flink未授权访问漏洞](<安全漏洞/未授权漏洞/Apache Flink未授权访问漏洞.md>)
+  * [Atlassian Crowd 未授权访问漏洞](<安全漏洞/未授权漏洞/Atlassian Crowd 未授权访问漏洞.md>)
+  * [clickhouse 未授权访问漏洞](<安全漏洞/未授权漏洞/clickhouse 未授权访问漏洞.md>)
   * [SpringBoot Actuator未授权访问漏洞](<安全漏洞/未授权漏洞/SpringBoot Actuator未授权访问漏洞.md>)
 ## 安全证书
 * [CISSP](<安全证书/CISSP/README.md>)
