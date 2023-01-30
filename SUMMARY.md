@@ -36,7 +36,7 @@
   * [CouchDB未授权访问漏洞](<安全漏洞/未授权漏洞/CouchDB未授权访问漏洞.md>)
   * [Docker未授权访问漏洞](<安全漏洞/未授权漏洞/Docker未授权访问漏洞.md>)
   * [druid 监控页未授权访问漏洞](<安全漏洞/未授权漏洞/druid 监控页未授权访问漏洞.md>)
-  * [Dubbo 未授权访问](<安全漏洞/未授权漏洞/Dubbo 未授权访问.md>)
+  * [Dubbo 未授权访问漏洞](<安全漏洞/未授权漏洞/Dubbo 未授权访问漏洞.md>)
   * [Hadoop YARN resourcemanager 未授权访问漏洞](<安全漏洞/未授权漏洞/Hadoop YARN resourcemanager 未授权访问漏洞.md>)
   * [Hadoop Yarn RPC未授权访问漏洞](<安全漏洞/未授权漏洞/Hadoop Yarn RPC未授权访问漏洞.md>)
   * [InfluxDB API 未授权访问漏洞](<安全漏洞/未授权漏洞/InfluxDB API 未授权访问漏洞.md>)
