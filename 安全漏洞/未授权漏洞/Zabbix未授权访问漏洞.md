@@ -38,7 +38,7 @@ docker run -p 10051:10051  -p 80:80 zabbix/zabbix-appliance:ubuntu-4.0.12
 - https://TARGET/zabbix/latest.php?ddreset=1
 - https://TARGET/zabbix/charts.php?ddreset=1
 - https://TARGET/zabbix/screens.php?ddreset=1
-  https://TARGET/zabbix/zabbix.php?action=map.view&ddreset=1
+- https://TARGET/zabbix/zabbix.php?action=map.view&ddreset=1
 - https://TARGET/zabbix/srv_status.php?ddreset=1
 - https://TARGET/zabbix/hostinventoriesoverview.php?ddreset=1
 - https://TARGET/zabbix/hostinventories.php?ddreset=1

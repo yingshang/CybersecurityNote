@@ -23,4 +23,3 @@ http://192.168.0.5:7001/console/css/%252e%252e%252fconsole.portal
 
 远程攻击者可以构造特殊的HTTP请求，在未经身份验证的情况下接管 WebLogic Server Console ，并在 WebLogic Server Console 执行任意代码。
 
-* weblogic 权限绕过命令执行漏洞复现

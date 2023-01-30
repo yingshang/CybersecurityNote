@@ -250,6 +250,14 @@ public class SparkAuthFilter implements Filter {
 }
 ```
 
+> 这段代码是一个 Java 的 Servlet Filter 类，名为 SparkAuthFilter。该类实现了 Filter 接口，在接收 HTTP 请求时可以对请求进行认证，并决定是否允许该请求继续向下传递。
+>
+> 在 Filter 初始化时，可以从配置中读取 username 和 password，并赋值到类的实例变量中。
+>
+> 对于每一个请求，程序会检查请求的 Authorization header 是否存在，并判断是否是 Basic 认证方式。如果是，程序会对 header 中的认证凭证进行解码，并与 username 和 password 进行比较，如果一致则允许请求继续，否则返回 401 Unauthorized。
+>
+> 在返回 401 Unauthorized 时，程序会在 HTTP 响应的 WWW-Authenticate header 中加入认证需要使用的 realm 信息。
+
 使用maven进行编译，编译的jar包在target目录下面。
 
 ![image-20220516165416923](../../.gitbook/assets/image-20220516165416923.png)
