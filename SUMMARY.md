@@ -58,7 +58,7 @@
   * [Spark 未授权访问漏洞](<安全漏洞/未授权漏洞/Spark 未授权访问漏洞.md>)
   * [Spring Cloud Gateway Server 未授权访问漏洞](<安全漏洞/未授权漏洞/Spring Cloud Gateway Server 未授权访问漏洞.md>)
   * [SpringBoot Actuator未授权访问漏洞](<安全漏洞/未授权漏洞/SpringBoot Actuator未授权访问漏洞.md>)
-  * [VNC 未授权访问漏洞](<安全漏洞/未授权漏洞/VNC 未授权访问漏洞.md>)
+  * [VNC Server 未授权访问漏洞](<安全漏洞/未授权漏洞/VNC Server 未授权访问漏洞.md>)
   * [Weblogic 未授权访问漏洞](<安全漏洞/未授权漏洞/Weblogic 未授权访问漏洞.md>)
   * [Zabbix未授权访问漏洞](<安全漏洞/未授权漏洞/Zabbix未授权访问漏洞.md>)
   * [ZooKeeper未授权访问漏洞](<安全漏洞/未授权漏洞/ZooKeeper未授权访问漏洞.md>)
