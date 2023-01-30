@@ -8,7 +8,7 @@ Apache Flink Dashboard默认没有用户权限认证，攻击者可以通过未�
 
 测试版本：flink-1.15.1
 
-修改`flink-1.15.1/confflink-conf.yaml`
+修改`flink-1.15.1/confflink-conf.yaml`，将8081端口开启。
 
 ![image-20220726112749940](../../.gitbook/assets/image-20220726112749940.png)
 

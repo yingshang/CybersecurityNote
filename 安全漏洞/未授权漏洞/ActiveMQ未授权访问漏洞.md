@@ -1,13 +1,12 @@
 # ActiveMQ未授权访问漏洞
 
-## 漏洞描述
+## Vulnerability Description
 
-Apache ActiveMQ是美国阿帕奇（Apache）软件基金会所研发的一套开源的消息中间件，它支持Java消息服务、集群、Spring Framework等。
-Apache ActiveMQ管理控制台的默认管理用户名和密码分别为admin和admin，用户可以未经授权使用默认凭据直接访问服务器，导致敏感信息泄露，并进一步进行攻击。
+Apache ActiveMQ is an open source message middleware developed by the Apache Software Foundation, which supports Java Message Service, clustering, Spring Framework, etc. The default username and password of the Apache ActiveMQ management console are admin and admin, respectively. Users can access the server directly without authorization using the default credentials, resulting in sensitive information leakage and further attacks.
 
-## 环境搭建
+## Environment Setup
 
-下载：http://archive.apache.org/dist/activemq/apache-activemq/5.5.0/apache-activemq-5.5.0-bin.tar.gz
+Download: http://archive.apache.org/dist/activemq/apache-activemq/5.5.0/apache-activemq-5.5.0-bin.tar.gz
 
 ```
 [root@localhost bin]# ./activemq start
@@ -23,21 +22,22 @@ INFO: pidfile created : '/tmp/apache-activemq-5.5.0/data/activemq.pid' (pid '217
 
 ```
 
-## 漏洞复现
+## Vulnerability Reproduction
 
-直接访问：http://192.168.32.183:8161/admin/queues.jsp
+Directly access: http://192.168.32.183:8161/admin/queues.jsp
 
 ![image-20220725170715767](../../.gitbook/assets/image-20220725170715767.png)
 
-## 修复方案
+## Solution
 
-编辑 `${ACTIVEMQ_HOME}/conf/jetty.xml`开启身份验证，将authenticate属性改为true：
+Edit `${ACTIVEMQ_HOME}/conf/jetty.xml` to enable authentication and change the authenticate attribute to true:
 
 ```
+pythonCopy code
 <property name="authenticate" value="true" />
 ```
 
-编辑文件`conf/jetty-realm.properties`来更改[Apache](https://so.csdn.net/so/search?q=Apache&spm=1001.2101.3001.7020) ActiveMQ的默认管理用户名和密码，格式如下：
+Edit the file `conf/jetty-realm.properties` to change the default username and password for Apache ActiveMQ, as follows:
 
 ![image-20220725171053077](../../.gitbook/assets/image-20220725171053077.png)
 
