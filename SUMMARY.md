@@ -68,6 +68,9 @@
   * [考证经验分享](<安全证书/CRTO/考证经验分享.md>)
 * [OSCP](<安全证书/OSCP/README.md>)
   * [考证经验分享](<安全证书/OSCP/考证经验分享.md>)
+## 运维配置
+* [Kubernetes](<运维配置/Kubernetes/README.md>)
+  * [安装部署](<运维配置/Kubernetes/安装部署.md>)
 ## 靶场环境
 * [attackdefense](<靶场环境/attackdefense/README.md>)
 * [HTB](<靶场环境/HTB/README.md>)
