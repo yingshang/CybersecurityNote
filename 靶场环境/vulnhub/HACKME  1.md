@@ -147,4 +147,4 @@ find / -perm -u=s -type f 2>/dev/null
 
 直接提权成功。
 
-![image-20220907150432426](../../.gitbook/assets/image-20220907150432426.png)
+![image-20230208145931450](../../.gitbook/assets/image-20230208145931450.png)

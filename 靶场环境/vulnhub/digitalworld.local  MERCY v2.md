@@ -250,4 +250,4 @@ chmod +s /bin/bash
 
 使 bash 成为 SUID 意味着如果我们`-p`在执行时提供参数，它将以 root 身份执行。等待一段时间后，我们可以检查它是否被设为 SUID 以验证它是否`ls -la`在 bash 上运行。
 
-![image-20220817224915637](../../.gitbook/assets/image-20220817224915637.png)
+![image-20230208134817446](../../.gitbook/assets/image-20230208134817446.png)

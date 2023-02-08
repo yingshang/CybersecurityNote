@@ -249,4 +249,4 @@ site cpto /home/patrick/script/test
 
 提权成功。
 
-![image-20220905141538873](../../.gitbook/assets/image-20220905141538873.png)
+![image-20230208134800683](../../.gitbook/assets/image-20230208134800683.png)

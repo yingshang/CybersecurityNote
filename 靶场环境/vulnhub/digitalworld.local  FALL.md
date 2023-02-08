@@ -176,4 +176,4 @@ uid=1000(qiu) gid=1000(qiu) groups=1000(qiu),10(wheel)
 
 提权成功
 
-![image-20220906112427634](../../.gitbook/assets/image-20220906112427634.png)
+![image-20230208134746313](../../.gitbook/assets/image-20230208134746313.png)

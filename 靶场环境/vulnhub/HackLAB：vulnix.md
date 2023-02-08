@@ -1,7 +1,6 @@
 # HackLAB：vulnix
 
 > 下载地址：https://download.vulnhub.com/hacklab/Vulnix.7z
->
 
 ## 实战操作
 

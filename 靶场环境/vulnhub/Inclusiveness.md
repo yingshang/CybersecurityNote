@@ -230,4 +230,4 @@ export PATH=/tmp:$PATH
 
 提权成功
 
-![image-20220914140227160](../../.gitbook/assets/image-20220914140227160.png)
+![image-20230208150040419](../../.gitbook/assets/image-20230208150040419.png)

@@ -147,4 +147,4 @@ Content-Length: 230
 
 su成功
 
-![image-20220906133002919](../../.gitbook/assets/image-20220906133002919.png)
+![image-20230208134835505](../../.gitbook/assets/image-20230208134835505.png)

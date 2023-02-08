@@ -206,4 +206,4 @@ cd /root
 ls
 ```
 
-![image-20220910223149010](../../.gitbook/assets/image-20220910223149010.png)
+![image-20230208150005962](../../.gitbook/assets/image-20230208150005962.png)

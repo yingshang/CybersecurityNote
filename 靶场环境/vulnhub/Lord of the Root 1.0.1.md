@@ -6,15 +6,15 @@
 
 发现靶场IP地址：`192.168.32.153`
 
-![image-20220609172940244](../../.gitbook/assets/image-20220609172940244.png)
+![image-20220609172940244](../../.gitbook/assets/image-20220609172940244-1675839926238857.png)
 
 扫描对外端口，发现只开启22端口。
 
-![image-20220609173428050](../../.gitbook/assets/image-20220609173428050.png)
+![image-20220609173428050](../../.gitbook/assets/image-20220609173428050-1675839926238858.png)
 
 SSH连接，发现这段提示：`Easy as 1,2,3`
 
-![image-20220609173513789](../../.gitbook/assets/image-20220609173513789.png)
+![image-20220609173513789](../../.gitbook/assets/image-20220609173513789-1675839926238859.png)
 
 使用knock 对1，2，3端口进行敲击
 
@@ -25,19 +25,19 @@ SSH连接，发现这段提示：`Easy as 1,2,3`
 
 可以看到1337端口已经打开。
 
-![image-20220609175312516](../../.gitbook/assets/image-20220609175312516.png)
+![image-20220609175312516](../../.gitbook/assets/image-20220609175312516-1675839926238861.png)
 
 浏览器访问1337端口
 
-![image-20220609175447348](../../.gitbook/assets/image-20220609175447348.png)
+![image-20220609175447348](../../.gitbook/assets/image-20220609175447348-1675839926238860.png)
 
 收集WEB系统的基本信息
 
-![image-20220609175649589](../../.gitbook/assets/image-20220609175649589.png)
+![image-20220609175649589](../../.gitbook/assets/image-20220609175649589-1675839926238862.png)
 
 访问robots.txt
 
-![image-20220609180139963](../../.gitbook/assets/image-20220609180139963.png)
+![image-20220609180139963](../../.gitbook/assets/image-20220609180139963-1675839926238863.png)
 
 查看页面源代码，找到一串疑似base64加密字符串。
 
@@ -45,7 +45,7 @@ SSH连接，发现这段提示：`Easy as 1,2,3`
 THprM09ETTBOVEl4TUM5cGJtUmxlQzV3YUhBPSBDbG9zZXIh
 ```
 
-![image-20220609180212802](../../.gitbook/assets/image-20220609180212802.png)
+![image-20220609180212802](../../.gitbook/assets/image-20220609180212802-1675839926238864.png)
 
 这段字符串是经过**两层**base64加密，解密成功获取到一下URL
 
@@ -53,11 +53,11 @@ THprM09ETTBOVEl4TUM5cGJtUmxlQzV3YUhBPSBDbG9zZXIh
 /978345210/index.php
 ```
 
-![image-20220610094542855](../../.gitbook/assets/image-20220610094542855.png)
+![image-20220610094542855](../../.gitbook/assets/image-20220610094542855-1675839926238865.png)
 
 访问URL
 
-![image-20220610094734027](../../.gitbook/assets/image-20220610094734027.png)
+![image-20220610094734027](../../.gitbook/assets/image-20220610094734027-1675839926238866.png)
 
 ## 注入
 
@@ -87,7 +87,7 @@ Table: Users
 
 可以ssh到**smeagol**账号
 
-![image-20220610100725692](../../.gitbook/assets/image-20220610100725692.png)
+![image-20220610100725692](../../.gitbook/assets/image-20220610100725692-1675839926238867.png)
 
 ## 提权
 
@@ -95,7 +95,7 @@ Table: Users
 
 这个靶场有`CVE-2015-8660`提权漏洞
 
-![image-20220610101119586](../../.gitbook/assets/image-20220610101119586.png)
+![image-20220610101119586](../../.gitbook/assets/image-20220610101119586-1675839926238869.png)
 
 ### UDF提权
 
@@ -204,11 +204,11 @@ char do_system_init(UDF_INIT *initid, UDF_ARGS *args, char *message)
 $db = new mysqli('localhost', 'root', 'darkshadow', 'Webapp');
 ```
 
-![image-20220610103259037](../../.gitbook/assets/image-20220610103259037.png)
+![image-20220610103259037](../../.gitbook/assets/image-20220610103259037-1675839926238868.png)
 
 按照 EXP脚本提示，提权成功
 
-![image-20220610104123154](../../.gitbook/assets/image-20220610104123154.png)
+![image-20220610104123154](../../.gitbook/assets/image-20220610104123154-1675839926238870.png)
 
 ### 缓冲区溢出
 
@@ -239,6 +239,3 @@ smeagol@LordOfTheRoot:/tmp$ find / -perm -g=s -o -perm -4000 ! -type l -maxdepth
 -rwsr-xr-- 1 root dip 323000 Apr 21  2015 /usr/sbin/pppd
 ```
 
-https://g0blin.co.uk/lord-of-the-root-vulnhub-writeup/
-
-https://blog.csdn.net/qq\_34801745/article/details/103792018

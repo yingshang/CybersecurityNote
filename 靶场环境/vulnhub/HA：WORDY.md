@@ -642,4 +642,4 @@ iqnite:$1$ignite$3eTbJm98O9Hz.k1NTdNxe1:0:0:root:/root:/bin/bash
 
 提权成功
 
-![image-20220607100756649](../../.gitbook/assets/image-20220607100756649.png)
+![image-20230208145757431](../../.gitbook/assets/image-20230208145757431.png)

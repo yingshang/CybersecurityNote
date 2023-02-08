@@ -172,4 +172,4 @@ cp /etc/issue-standard /etc/issue
 ls -la /root/ > /home/oscp/ls.txt
 ```
 
-![image-20220720111227350](../../.gitbook/assets/image-20220720111227350.png)
+![image-20230208150055865](../../.gitbook/assets/image-20230208150055865.png)

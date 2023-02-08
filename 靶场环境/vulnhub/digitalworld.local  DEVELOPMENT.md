@@ -102,4 +102,4 @@ echo os.system('/bin/bash')
 
 ![image-20220905122055613](../../.gitbook/assets/image-20220905122055613.png)
 
-![image-20220905122121663](../../.gitbook/assets/image-20220905122121663.png)
+![image-20230208134730280](../../.gitbook/assets/image-20230208134730280.png)

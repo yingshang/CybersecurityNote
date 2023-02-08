@@ -334,4 +334,4 @@ if __name__ == "__main__":
 
 提权到root用户
 
-![image-20220908155808742](../../.gitbook/assets/image-20220908155808742.png)
+![image-20230208134915871](../../.gitbook/assets/image-20230208134915871.png)

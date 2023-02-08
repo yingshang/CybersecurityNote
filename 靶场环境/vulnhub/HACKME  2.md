@@ -110,4 +110,4 @@ find / -perm -u=s -type f 2>/dev/null
 
 发现home目录下有一个可疑的文件，执行一下之后发现顺利get root权限。
 
-![image-20220907160125047](../../.gitbook/assets/image-20220907160125047.png)
+![image-20230208145947136](../../.gitbook/assets/image-20230208145947136.png)

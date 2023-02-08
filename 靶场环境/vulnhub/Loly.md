@@ -25,17 +25,17 @@ Nmap done: 1 IP address (1 host up) scanned in 8.22 seconds
 
 浏览器访问80端口
 
-![image-20220906215926885](../../.gitbook/assets/image-20220906215926885.png)
+![image-20220906215926885](../../.gitbook/assets/image-20220906215926885-1675839900867831.png)
 
 爆破web目录
 
-![image-20220906220003026](../../.gitbook/assets/image-20220906220003026.png)
+![image-20220906220003026](../../.gitbook/assets/image-20220906220003026-1675839900868833.png)
 
 需要配置本地hosts
 
-![image-20220906220031942](../../.gitbook/assets/image-20220906220031942.png)
+![image-20220906220031942](../../.gitbook/assets/image-20220906220031942-1675839900867832.png)
 
-![image-20220906220122590](../../.gitbook/assets/image-20220906220122590.png)
+![image-20220906220122590](../../.gitbook/assets/image-20220906220122590-1675839900868835.png)
 
 枚举wordpress用户
 
@@ -72,7 +72,7 @@ Trying loly / corazon Time: 00:00:01 <
 http://loly.lc/wordpress/wp-admin/admin.php?page=adrotate-media
 ```
 
-![image-20220906220850297](../../.gitbook/assets/image-20220906220850297.png)
+![image-20220906220850297](../../.gitbook/assets/image-20220906220850297-1675839900868834.png)
 
 ```
 ┌──(root💀kali)-[/tmp]
@@ -81,7 +81,7 @@ http://loly.lc/wordpress/wp-admin/admin.php?page=adrotate-media
 
 ```
 
-![image-20220906221157615](../../.gitbook/assets/image-20220906221157615.png)
+![image-20220906221157615](../../.gitbook/assets/image-20220906221157615-1675839900868836.png)
 
 访问反弹shell
 

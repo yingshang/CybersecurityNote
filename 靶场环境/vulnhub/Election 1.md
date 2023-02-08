@@ -220,4 +220,4 @@ Shellcodes: No Results
 
 我转移`47009.c`到服务器并通过执行我们获得root访问权限。
 
-![image-20220911222538034](../../.gitbook/assets/image-20220911222538034.png)
+![image-20230208135007594](../../.gitbook/assets/image-20230208135007594.png)

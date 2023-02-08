@@ -10,7 +10,7 @@
 
 靶场的IP地址：`192.168.32.6`
 
-![image-20220610135535460](../../.gitbook/assets/image-20220610135535460.png)
+![image-20220610135535460](../../.gitbook/assets/image-20220610135535460-1675839868988823.png)
 
 扫描对外端口
 
@@ -198,4 +198,4 @@ Docker version 18.03.1-ce, build 9ee9f40
 docker run -v /:/hostOS -it --rm chrisfosterelli/rootplease
 ```
 
-![image-20220612093609024](../../.gitbook/assets/image-20220612093609024.png)
+![image-20230208150438554](../../.gitbook/assets/image-20230208150438554.png)
