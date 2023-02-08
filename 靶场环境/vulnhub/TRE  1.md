@@ -158,4 +158,4 @@ hack:$1$user3$rAGRVf5p2jYTqtqOW5cPu/:0:0::/root:/bin/bash
 su hack
 ```
 
-![image-20220904183654360](../../.gitbook/assets/image-20220904183654360.png)
+![image-20230208160839828](../../.gitbook/assets/image-20230208160839828.png)

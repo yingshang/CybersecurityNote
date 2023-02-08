@@ -108,7 +108,7 @@ Rows matched: 1  Changed: 1  Warnings: 0
 
 ```
 
-![QQ录屏20220904205517](../../.gitbook/assets/QQ%E5%BD%95%E5%B1%8F20220904205517.gif)
+![QQ录屏20220904205517](../../.gitbook/assets/QQ录屏20220904205517.gif)
 
 访问：`http://sunset-midnight/wp-content/plugins/malicious/wetw0rk_maybe.php`，即可连接反弹shell
 
@@ -197,4 +197,4 @@ uid=0(root) gid=0(root) groups=0(root),24(cdrom),25(floppy),29(audio),30(dip),44
 
 查看flag
 
-![image-20220904211003780](../../.gitbook/assets/image-20220904211003780.png)
+![image-20230208160628254](../../.gitbook/assets/image-20230208160628254.png)

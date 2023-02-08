@@ -28,7 +28,7 @@ Nmap done: 1 IP address (1 host up) scanned in 13.38 seconds
 
 访问80端口
 
-![image-20220909104418628](../../.gitbook/assets/image-20220909104418628-1675840137332965.png)
+![image-20220909104418628](../../.gitbook/assets/image-20220909104418628.png)
 
 爆破web目录，没有发现有用的信息。
 
@@ -105,11 +105,11 @@ Megapixels                      : 0.071
 
 访问：`/kzMb5nVYJw`
 
-![image-20220909110246554](../../.gitbook/assets/image-20220909110246554-1675840137332966.png)
+![image-20220909110246554](../../.gitbook/assets/image-20220909110246554.png)
 
 查看页面源代码
 
-![image-20220909110502388](../../.gitbook/assets/image-20220909110502388-1675840137332967.png)
+![image-20220909110502388](../../.gitbook/assets/image-20220909110502388.png)
 
 使用hydra爆破输入框
 
@@ -131,7 +131,7 @@ Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2022-09-08 23:09:
 
 爆破出来的密码是：`elite`
 
-![image-20220909110652822](../../.gitbook/assets/image-20220909110652822-1675840137332968.png)
+![image-20220909110652822](../../.gitbook/assets/image-20220909110652822.png)
 
 输入框存在SQL注入漏洞
 
@@ -166,7 +166,7 @@ hashcat爆破哈希
 └─# hashcat -m 0 -a 0 hash /usr/share/wordlists/rockyou.txt 
 ```
 
-![image-20220909111959800](../../.gitbook/assets/image-20220909111959800-1675840137334969.png)
+![image-20220909111959800](../../.gitbook/assets/image-20220909111959800.png)
 
 ssh登录
 

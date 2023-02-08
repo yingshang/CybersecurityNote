@@ -372,4 +372,4 @@ User n30 may run the following commands on W34KN3SS:
 
 ```
 
-![image-20220909103525585](../../.gitbook/assets/image-20220909103525585.png)
+![image-20230208161234230](../../.gitbook/assets/image-20230208161234230.png)

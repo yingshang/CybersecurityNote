@@ -200,4 +200,4 @@ etc   lib             mnt         run   swap.img  var
 root@test:/mnt/root# echo "%webdeveloper ALL=(ALL:ALL) ALL" >> /mnt/root/etc/sudoers
 ```
 
-![image-20220612163055741](../../.gitbook/assets/image-20220612163055741.png)
+![image-20230208161336251](../../.gitbook/assets/image-20230208161336251.png)

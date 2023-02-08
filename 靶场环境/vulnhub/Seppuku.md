@@ -273,4 +273,4 @@ ls -la
 
 现在是时候利用 `.cgi_bin` 程序了，因此我们再次登录为 Samurai 并运行以下命令并获取 root shell 并通过捕获 root 标志完成挑战
 
-![image-20220913203445885](../../.gitbook/assets/image-20220913203445885.png)
+![image-20230208160430426](../../.gitbook/assets/image-20230208160430426.png)

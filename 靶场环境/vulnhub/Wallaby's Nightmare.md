@@ -241,4 +241,4 @@ sudo -u waldo /usr/bin/vim /etc/apache2/sites-available/000-default.conf
 
 最后提权成功
 
-![image-20220620221740212](../../.gitbook/assets/image-20220620221740212.png)
+![image-20230208161300671](../../.gitbook/assets/image-20230208161300671.png)

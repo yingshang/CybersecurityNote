@@ -24,8 +24,8 @@ Nmap done: 1 IP address (1 host up) scanned in 13.61 seconds
 
 ```
 
-![image-20220911183041725](../../.gitbook/assets/image-20220911183041725-1675840060739910.png)
+![image-20220911183041725](../../.gitbook/assets/image-20220911183041725-1675842176254189.png)
 
 访问路径：`http://192.168.32.227/w/h/i/s/p/e/r/the_abyss/`，每次刷新内容都会变化
 
-![image-20230208150746369](../../.gitbook/assets/image-20230208150746369.png)
+![image-20230208154306306](../../.gitbook/assets/image-20230208154306306.png)

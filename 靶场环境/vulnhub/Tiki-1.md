@@ -273,4 +273,4 @@ uid=1000(silky) gid=1000(silky) Gruppen=1000(silky),4(adm),24(cdrom),27(sudo),30
 
 提权成功。
 
-![image-20220910211129703](../../.gitbook/assets/image-20220910211129703.png)
+![image-20230208160807990](../../.gitbook/assets/image-20230208160807990.png)

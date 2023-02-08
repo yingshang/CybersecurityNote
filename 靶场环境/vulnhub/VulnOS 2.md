@@ -142,4 +142,4 @@ Copied to: /tmp/37292.c
 
 获取flag.txt内容
 
-![image-20220608133857965](../../.gitbook/assets/image-20220608133857965.png)
+![image-20230208161214059](../../.gitbook/assets/image-20230208161214059.png)

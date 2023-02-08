@@ -32,4 +32,4 @@ Nmap done: 1 IP address (1 host up) scanned in 17.85 seconds
 
 访问8008端口
 
-![image-20220908174315121](../../.gitbook/assets/image-20220908174315121.png)
+![image-20230208160819758](../../.gitbook/assets/image-20230208160819758.png)

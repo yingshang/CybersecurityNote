@@ -120,4 +120,4 @@ define( 'DB_HOST', 'localhost' );
 
 ![image-20220906215234299](../../.gitbook/assets/image-20220906215234299.png)
 
-![image-20220906215342238](../../.gitbook/assets/image-20220906215342238.png)
+![image-20230208161537677](../../.gitbook/assets/image-20230208161537677.png)

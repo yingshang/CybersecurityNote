@@ -170,4 +170,4 @@ python -c 'import pty;pty.spawn("/bin/bash")'
 
 使用CVE-2015-1328进行提权
 
-![image-20220902180007566](../../.gitbook/assets/image-20220902180007566.png)
+![image-20230208160411117](../../.gitbook/assets/image-20230208160411117.png)

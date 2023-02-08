@@ -30,11 +30,11 @@ Nmap done: 1 IP address (1 host up) scanned in 15.68 seconds
 
 浏览器访问80端口
 
-![image-20220905194312987](../../.gitbook/assets/image-20220905194312987-1675840035291905.png)
+![image-20220905194312987](../../.gitbook/assets/image-20220905194312987.png)
 
 跟随链接访问管理后台
 
-![image-20220905195246754](../../.gitbook/assets/image-20220905195246754-1675840035291906.png)
+![image-20220905195246754](../../.gitbook/assets/image-20220905195246754.png)
 
 我们搜索 Nagios XI 的漏洞利用，我们发现了一个 authenticated_rce 漏洞利用。让我们加载 msfconsole 并加载漏洞 `nagios_xi_authenticated_rce`。
 
@@ -71,4 +71,4 @@ python -c 'import pty;pty.spawn("/bin/bash")'
 cd /root
 ```
 
-![image-20230208150721890](../../.gitbook/assets/image-20230208150721890.png)
+![image-20230208153815756](../../.gitbook/assets/image-20230208153815756.png)

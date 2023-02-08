@@ -159,4 +159,4 @@ trunks@Vegeta:~$ echo "Tom:ad7t5uIalqMws:0:0:User_like_root:/root:/bin/bash" >> 
 
 现在我们可以使用上面找到的密码 Password@973 将用户切换到 Tom：
 
-![image-20220914175258337](../../.gitbook/assets/image-20220914175258337.png)
+![image-20230208161000477](../../.gitbook/assets/image-20230208161000477.png)

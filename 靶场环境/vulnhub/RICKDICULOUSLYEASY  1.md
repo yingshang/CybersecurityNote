@@ -314,4 +314,4 @@ hydra -IVf -s 22222 -l RickSanchez -P rick ssh://target-ip-address
 
 而且，一段时间后我受到了打击：`P7Curtains`
 
-![image-20220908172508989](../../.gitbook/assets/image-20220908172508989.png)
+![image-20230208160340250](../../.gitbook/assets/image-20230208160340250.png)
