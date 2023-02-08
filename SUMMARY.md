@@ -79,5 +79,7 @@
 * [HTB](<靶场环境/HTB/README.md>)
 * [tryhackme](<靶场环境/tryhackme/README.md>)
 * [vulnhub](<靶场环境/vulnhub/README.md>)
+* [云原生](<靶场环境/云原生/README.md>)
+  * [kubernetes-goat](<靶场环境/云原生/kubernetes-goat.md>)
 * [域环境](<靶场环境/域环境/README.md>)
 * [红日靶场](<靶场环境/红日靶场/README.md>)
