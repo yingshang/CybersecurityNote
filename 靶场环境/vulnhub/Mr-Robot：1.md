@@ -10,7 +10,7 @@ https://download.vulnhub.com/mrrobot/mrRobot.ova
 
 靶机扫描地址：`192.168.32.169`。
 
-![image-20220715095522855](../../.gitbook/assets/image-20220715095522855.png)
+![image-20220715095522855](../../.gitbook/assets/image-20220715095522855-1675840086321922.png)
 
 对靶机进行端口扫描
 
@@ -33,7 +33,7 @@ Nmap done: 1 IP address (1 host up) scanned in 106.71 seconds
 
 访问80端口网站是动画。
 
-![image-20220715095913509](../../.gitbook/assets/image-20220715095913509.png)
+![image-20220715095913509](../../.gitbook/assets/image-20220715095913509-1675840086321923.png)
 
 扫描80端口
 
@@ -75,11 +75,11 @@ Nmap done: 1 IP address (1 host up) scanned in 106.71 seconds
 
 目录爆破
 
-![image-20220715100325269](../../.gitbook/assets/image-20220715100325269.png)
+![image-20220715100325269](../../.gitbook/assets/image-20220715100325269-1675840086321925.png)
 
 发现文件：`robots.txt`。
 
-![image-20220715095959357](../../.gitbook/assets/image-20220715095959357.png)
+![image-20220715095959357](../../.gitbook/assets/image-20220715095959357-1675840086321924.png)
 
 下载这两个文件，其中`key-1-of-3.txt`是一个加密字符串，`fsocity.dic`是一个字典，我猜这是我们以后必须使用的东西。
 
@@ -91,7 +91,7 @@ Nmap done: 1 IP address (1 host up) scanned in 106.71 seconds
 
 然后，我将 fsociety.dic 文件加载到有效负载中并开始攻击 很快我们就可以看到用户 Elliot 的响应长度与其余响应的长度不同。这表明被发回的错误消息与其他用户的错误消息不同。
 
-![image-20220715101808986](../../.gitbook/assets/image-20220715101808986.png)
+![image-20220715101808986](../../.gitbook/assets/image-20220715101808986-1675840086321926.png)
 
 爆破wordpress登录密码
 
@@ -113,13 +113,13 @@ Nmap done: 1 IP address (1 host up) scanned in 106.71 seconds
 
 登录wordpress
 
-![image-20220715151518007](../../.gitbook/assets/image-20220715151518007.png)
+![image-20220715151518007](../../.gitbook/assets/image-20220715151518007-1675840086321927.png)
 
 修改404.php
 
 > https://192.168.32.169/wp-admin/theme-editor.php
 
-![image-20220715152217583](../../.gitbook/assets/image-20220715152217583.png)
+![image-20220715152217583](../../.gitbook/assets/image-20220715152217583-1675840086321928.png)
 
 nc反弹成功，找到一个hash
 
@@ -128,11 +128,11 @@ $ cat pass*
 robot:c3fcd3d76192e4007dfb496cca67e13b
 ```
 
-![image-20220715152257306](../../.gitbook/assets/image-20220715152257306.png)
+![image-20220715152257306](../../.gitbook/assets/image-20220715152257306-1675840086321929.png)
 
 去网上查找hash的值密码，`abcdefghijklmnopqrstuvwxyz`
 
-![image-20220715152440777](../../.gitbook/assets/image-20220715152440777.png)
+![image-20220715152440777](../../.gitbook/assets/image-20220715152440777-1675840086321930.png)
 
 ```
 $ python -c 'import pty; pty.spawn("/bin/bash")'        
@@ -156,7 +156,7 @@ cat ke*
 
 但是无法破解
 
-![image-20220715152712996](../../.gitbook/assets/image-20220715152712996.png)
+![image-20220715152712996](../../.gitbook/assets/image-20220715152712996-1675840086321931.png)
 
 查看SUID的程序
 

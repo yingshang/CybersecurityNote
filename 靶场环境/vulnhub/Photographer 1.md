@@ -28,11 +28,11 @@ Nmap done: 1 IP address (1 host up) scanned in 50.65 seconds
 
 访问80端口
 
-![image-20220910212739323](../../.gitbook/assets/image-20220910212739323.png)
+![image-20220910212739323](../../.gitbook/assets/image-20220910212739323-1675840178089981.png)
 
 访问8000端口
 
-![image-20220910212814645](../../.gitbook/assets/image-20220910212814645.png)
+![image-20220910212814645](../../.gitbook/assets/image-20220910212814645-1675840178089982.png)
 
 查看共享目录
 
@@ -92,11 +92,11 @@ Don't forget your secret, my babygirl ;)
 
 ```
 
-![image-20220910213320623](../../.gitbook/assets/image-20220910213320623.png)
+![image-20220910213320623](../../.gitbook/assets/image-20220910213320623-1675840178089983.png)
 
 使用发现的邮件发送文件 ( daisa@photographer.com )中的电子邮件地址以及可能的密码 (babygirl)，我能够登录到 Koken 管理面板！
 
-![image-20220910213347437](../../.gitbook/assets/image-20220910213347437.png)
+![image-20220910213347437](../../.gitbook/assets/image-20220910213347437-1675840178089984.png)
 
 我找到了一个上传图片的地方，以及一个可能的[任意文件上传漏洞](https://www.exploit-db.com/exploits/48706)。
 
@@ -153,9 +153,9 @@ Content-Type: image/jpeg
 
 ```
 
-![image-20220910214418554](../../.gitbook/assets/image-20220910214418554.png)
+![image-20220910214418554](../../.gitbook/assets/image-20220910214418554-1675840178089985.png)
 
-![image-20220910214428520](../../.gitbook/assets/image-20220910214428520.png)
+![image-20220910214428520](../../.gitbook/assets/image-20220910214428520-1675840178089986.png)
 
 下载反弹shell
 
