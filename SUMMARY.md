@@ -10,6 +10,9 @@
 * [sca](<devsecops/sca/README.md>)
 * [漏洞修复](<devsecops/漏洞修复/README.md>)
   * [Hello Java Sec](<devsecops/漏洞修复/Hello Java Sec.md>)
+## 书籍
+* [编译原理](<书籍/编译原理/README.md>)
+  * [第一章 引论](<书籍/编译原理/第一章 引论.md>)
 ## 安全测试
 * [APP渗透](<安全测试/APP渗透/README.md>)
 * [Linux提权](<安全测试/Linux提权/README.md>)
