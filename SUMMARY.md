@@ -28,6 +28,7 @@
 * [攻击绕过](<安全测试/攻击绕过/README.md>)
 * [木马病毒](<安全测试/木马病毒/README.md>)
 * [横向移动](<安全测试/横向移动/README.md>)
+  * [AS-REP Roasting攻击](<安全测试/横向移动/AS-REP Roasting攻击.md>)
 * [缓冲区溢出](<安全测试/缓冲区溢出/README.md>)
 ## 安全漏洞
 * [Linux提权漏洞](<安全漏洞/Linux提权漏洞/README.md>)
